@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contáctenos</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- HEADER FIJO -->
+  <header class="header-fijo">
+    <div class="logo-pequeno">
+      <img src="img/logo-pequeno.png" alt="Logo Pequeño QF" />
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Por qué QF?</a></li>
+        <li><a href="conozcanos.html">Conózcanos</a></li>
+        <li><a href="nuestras-soluciones.html">Nuestras Soluciones</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
+        <li><a href="contactenos.html" class="active">Contáctenos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION (Opcional) -->
+  <section class="hero-section-contacto">
+    <div class="hero-contacto-overlay">
+      <h1>Contáctenos</h1>
+    </div>
+  </section>
+
+  <main>
+    <!-- DETALLES DE CONTACTO (con su propio fondo o foto) -->
+    <section class="detalles-contacto-section">
+      <div class="detalles-contacto-overlay">
+        <h2>Detalles de Contacto</h2>
+        <p><strong>Teléfono:</strong> +506 88418198</p>
+        <p><strong>Horario:</strong> Lunes a Viernes de 8am a 5pm</p>
+        <p><strong>Ubicación:</strong> Heredia, Costa Rica</p>
+      </div>
+    </section>
+
+    <!-- FORMULARIO (caja con fondo imagen, borde redondeado y outline) -->
+    <section class="formulario-contacto-section">
+      <div class="form-contacto-wrap" 
+           style="background-image: url('img/form-bg.jpg');">
+        <div class="form-contacto-overlay">
+          <h2>Formulario de Contacto</h2>
+
+          <form action="https://formspree.io/f/mbllqlak" method="POST">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required />
+          
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" />
+          
+            <label for="correo">Correo</label>
+            <input type="email" id="correo" name="correo" required />
+          
+            <label for="asunto">Asunto</label>
+            <input type="text" id="asunto" name="asunto" />
+          
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+          
+            <button type="submit">Enviar</button>
+          </form>          
+        </div>
+      </div>
+    </section>
+
+    <!-- CALENDLY O INFORMACIÓN ADICIONAL (Opcional) -->
+    <section class="calendly-section">
+      <h3>Reserva una cita con nosotros</h3>
+      <iframe 
+        src="https://calendly.com/" 
+        width="100%" 
+        height="600" 
+        frameborder="0">
+      </iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 QF. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

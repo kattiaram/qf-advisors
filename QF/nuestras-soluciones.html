@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nuestras Soluciones</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- HEADER FIJO -->
+  <header class="header-fijo">
+    <div class="logo-pequeno">
+      <img src="img/logo-pequeno.png" alt="Logo Pequeño QF" />
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Por qué QF?</a></li>
+        <li><a href="conozcanos.html">Conózcanos</a></li>
+        <li><a href="nuestras-soluciones.html" class="active">Nuestras Soluciones</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
+        <li><a href="contactenos.html">Contáctenos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>Nuestras Soluciones</title>
+  
+    <!-- Example: link to your external stylesheet if you have one -->
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <style>
+      /* Quick in-page styles (you can move these to your CSS file if preferred) */
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        color: #fff;
+        background: #0b2a21; /* fallback color if the background image doesn't load */
+      }
+  
+      .hero-soluciones {
+        /* Nuestras Soluciones hero background */
+        height: 100vh; 
+        background: url("img/nuestras-soluciones-bg.jpg") no-repeat center center/cover;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .hero-soluciones-overlay {
+        background: rgba(0, 0, 0, 0);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0; 
+        left: 0;
+      }
+      .hero-soluciones h1 {
+        z-index: 2;
+        font-size: 3rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+  
+      .content-soluciones {
+        position: relative;
+        margin-top: -5vh; /* pull content up a bit if desired */
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+        margin: 2rem auto;
+        padding: 2rem;
+        max-width: 1200px;
+        border-radius: 8px;
+      }
+  
+      /* Example styling for a solutions grid */
+      .soluciones-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin-top: 2rem;
+      }
+      .solucion-item {
+        flex: 1 1 200px;
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 6px;
+        padding: 1rem;
+        transition: transform 0.3s ease;
+      }
+      .solucion-item:hover {
+        transform: scale(1.03);
+      }
+      .solucion-item h3 {
+        margin-bottom: 0.5rem;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+      }
+      .solucion-item p {
+        font-size: 0.95rem;
+        line-height: 1.4;
+      }
+    </style>
+  </head>
+  <body>
+  
+    <!-- HERO SECTION FOR “NUESTRAS SOLUCIONES” -->
+    <section class="hero-soluciones">
+      <div class="hero-soluciones-overlay"></div>
+      <h1>Nuestras Soluciones</h1>
+    </section>
+
+  <!-- MAIN CONTENT WITH SEMI-TRANSPARENT BACKGROUND -->
+  <section class="content-soluciones">
+    <h2>¿Qué Ofrecemos?</h2>
+    <p>
+      Descripción breve sobre las soluciones principales, y por qué son importantes para 
+      tus clientes. Puedes poner aquí un texto más extenso que explique cada línea de negocio.
+    </p>
+
+    <!-- SOLUCIONES GRID (ejemplo) -->
+    <div class="soluciones-grid">
+      <div class="solucion-item">
+        <h3>Consultoría</h3>
+        <p>Explica aquí tus servicios de consultoría. Principales enfoques, 
+           resultados que ofreces, etc.</p>
+      </div>
+      <div class="solucion-item">
+        <h3>Tecnología</h3>
+        <p>Describe tus soluciones tecnológicas, plataformas, integraciones y 
+           enfoques de innovación.</p>
+      </div>
+      <div class="solucion-item">
+        <h3>Educación</h3>
+        <p>Detalla tus programas de capacitación, talleres, certificaciones o 
+           formaciones específicas para clientes.</p>
+      </div>
+    </div>
+  </section>
+
+    <!-- CTE (Consultoría, Tecnología, Educación) en 3 botones grandes con breve descripción -->
+    <section class="cte-titles-section">
+      <div class="cte-grid-titles">
+        <!-- Consultoría -->
+        <div class="cte-item-title">
+          <button class="btn-cte" onclick="mostrarModal('consultoria')">Consultoría</button>
+          <p>
+            Breve descripción de consultoría: sus enfoques principales, beneficios, etc.
+          </p>
+        </div>
+        <!-- Tecnología -->
+        <div class="cte-item-title">
+          <button class="btn-cte" onclick="mostrarModal('tecnologia')">Tecnología</button>
+          <p>
+            Descripción de tecnología: soluciones, plataformas, innovación y más.
+          </p>
+        </div>
+        <!-- Educación -->
+        <div class="cte-item-title">
+          <button class="btn-cte" onclick="mostrarModal('educacion')">Educación</button>
+          <p>
+            Descripción de educación: capacitaciones, talleres, programas formativos.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Extra space before "Riesgos" -->
+    <section style="margin-top: 5rem;">
+      <h2 class="riesgos-title">Riesgos</h2>
+      <!-- Botones QF / Quanto -->
+      <div class="riesgos-buttons">
+        <button class="btn-riesgos" onclick="mostrarRiesgos('qf')">QF</button>
+        <button class="btn-riesgos" onclick="mostrarRiesgos('quanto')">Quanto</button>
+      </div>
+
+      <!-- LISTA QF (19 boxes) -->
+      <div id="riesgos-qf" class="riesgos-qf oculto" style="margin-top:2rem;">
+        <div class="riesgos-qf-grid">
+          <!-- Create 19 boxes -->
+          <!-- Example placeholders with an icon and text -->
+          <div class="qf-box">
+            <img src="img/riesgo-icon.png" alt="Icon" />
+            <p>Riesgo 1 (QF)</p>
+          </div>
+          <div class="qf-box">
+            <img src="img/riesgo-icon.png" alt="Icon" />
+            <p>Riesgo 2 (QF)</p>
+          </div>
+          <div class="qf-box">
+            <img src="img/riesgo-icon.png" alt="Icon" />
+            <p>Riesgo 3 (QF)</p>
+          </div>
+          <div class="qf-box">
+            <img src="img/riesgo-icon.png" alt="Icon" />
+            <p>Riesgo 4 (QF)</p>
+          </div>
+          <div class="qf-box">
+            <img src="img/riesgo-icon.png" alt="Icon" />
+            <p>Riesgo 5 (QF)</p>
+          </div>
+          <div class="qf-box">
+            <img src="img/riesgo-icon.png" alt="Icon" />
+            <p>Riesgo 6 (QF)</p>
+          </div>
+          <div class="qf-box">
+            <img src="img/riesgo-icon.png" alt="Icon" />
+            <p>Riesgo 7 (QF)</p>
+          </div>
+          <div class="qf-box">
+            <img src="img/riesgo-icon.png" alt="Icon" />
+            <p>Riesgo 8 (QF)</p>
+          </div>
+          <div class="qf-box">
+            <img src="img/riesgo-icon.png" alt="Icon" />
+            <p>Riesgo 9 (QF)</p>
+          </div>
+          <div class="qf-box">
+            <img src="img/riesgo-icon.png" alt="Icon" />
+            <p>Riesgo 10 (QF)</p>
+          </div>
+          <div class="qf-box">
+            <img src="img/riesgo-icon.png" alt="Icon" />
+            <p>Riesgo 11 (QF)</p>
+          </div>
+          <div class="qf-box">
+            <img src="img/riesgo-icon.png" alt="Icon" />
+            <p>Riesgo 12 (QF)</p>
+          </div>
+          <div class="qf-box">
+            <img src="img/riesgo-icon.png" alt="Icon" />
+            <p>Riesgo 13 (QF)</p>
+          </div>
+          <div class="qf-box">
+            <img src="img/riesgo-icon.png" alt="Icon" />
+            <p>Riesgo 14 (QF)</p>
+          </div>
+          <div class="qf-box">
+            <img src="img/riesgo-icon.png" alt="Icon" />
+            <p>Riesgo 15 (QF)</p>
+          </div>
+          <div class="qf-box">
+            <img src="img/riesgo-icon.png" alt="Icon" />
+            <p>Riesgo 16 (QF)</p>
+          </div>
+          <div class="qf-box">
+            <img src="img/riesgo-icon.png" alt="Icon" />
+            <p>Riesgo 17 (QF)</p>
+          </div>
+          <div class="qf-box">
+            <img src="img/riesgo-icon.png" alt="Icon" />
+            <p>Riesgo 18 (QF)</p>
+          </div>
+          <div class="qf-box">
+            <img src="img/riesgo-icon.png" alt="Icon" />
+            <p>Riesgo 19 (QF)</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- LISTA Quanto (20 boxes) -->
+      <div id="riesgos-quanto" class="riesgos-quanto oculto" style="margin-top:2rem;">
+        <div class="riesgos-quanto-grid">
+          <!-- 20 boxes for Quanto -->
+          <div class="quanto-box"><p>Riesgo 1 (Quanto)</p></div>
+          <div class="quanto-box"><p>Riesgo 2 (Quanto)</p></div>
+          <div class="quanto-box"><p>Riesgo 3 (Quanto)</p></div>
+          <div class="quanto-box"><p>Riesgo 4 (Quanto)</p></div>
+          <div class="quanto-box"><p>Riesgo 5 (Quanto)</p></div>
+          <div class="quanto-box"><p>Riesgo 6 (Quanto)</p></div>
+          <div class="quanto-box"><p>Riesgo 7 (Quanto)</p></div>
+          <div class="quanto-box"><p>Riesgo 8 (Quanto)</p></div>
+          <div class="quanto-box"><p>Riesgo 9 (Quanto)</p></div>
+          <div class="quanto-box"><p>Riesgo 10 (Quanto)</p></div>
+          <div class="quanto-box"><p>Riesgo 11 (Quanto)</p></div>
+          <div class="quanto-box"><p>Riesgo 12 (Quanto)</p></div>
+          <div class="quanto-box"><p>Riesgo 13 (Quanto)</p></div>
+          <div class="quanto-box"><p>Riesgo 14 (Quanto)</p></div>
+          <div class="quanto-box"><p>Riesgo 15 (Quanto)</p></div>
+          <div class="quanto-box"><p>Riesgo 16 (Quanto)</p></div>
+          <div class="quanto-box"><p>Riesgo 17 (Quanto)</p></div>
+          <div class="quanto-box"><p>Riesgo 18 (Quanto)</p></div>
+          <div class="quanto-box"><p>Riesgo 19 (Quanto)</p></div>
+          <div class="quanto-box"><p>Riesgo 20 (Quanto)</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 QF. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- MODALES -->
+  <div id="modal-consultoria" class="modal-contenedor">
+    <div class="modal">
+      <span class="cerrar" onclick="cerrarModal('consultoria')">&times;</span>
+      <h2>Consultoría</h2>
+      <p>Texto detallado de Consultoría.</p>
+    </div>
+  </div>
+  <div id="modal-tecnologia" class="modal-contenedor">
+    <div class="modal">
+      <span class="cerrar" onclick="cerrarModal('tecnologia')">&times;</span>
+      <h2>Tecnología</h2>
+      <p>Texto detallado de Tecnología.</p>
+    </div>
+  </div>
+  <div id="modal-educacion" class="modal-contenedor">
+    <div class="modal">
+      <span class="cerrar" onclick="cerrarModal('educacion')">&times;</span>
+      <h2>Educación</h2>
+      <p>Texto detallado de Educación.</p>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+  <script>
+  // MUESTRA/OCULTA RIESGOS QF O QUANTO
+  function mostrarRiesgos(tipo) {
+    const qfDiv = document.getElementById('riesgos-qf');
+    const quantoDiv = document.getElementById('riesgos-quanto');
+    if (tipo === 'qf') {
+      qfDiv.classList.remove('oculto');
+      quantoDiv.classList.add('oculto');
+    } else {
+      qfDiv.classList.add('oculto');
+      quantoDiv.classList.remove('oculto');
+    }
+  }
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
